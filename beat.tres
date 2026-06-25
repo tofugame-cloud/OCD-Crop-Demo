@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://ha7mxeyaeur7"]
+
+[ext_resource type="Texture2D" uid="uid://d2dy8oyc06s08" path="res://assets/cards/ไม่มีชื่อ 11_20260430151540.png" id="1_k76e1"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_qrnwx"]
+
+[resource]
+script = ExtResource("1_qrnwx")
+card_image = ExtResource("1_k76e1")
+animation_name = "beat"
+description = "Coin 3
+BasePower 4
+CoinPower 2
+Type blunt"
+base_power = 4
+manual_coin_count = 3
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

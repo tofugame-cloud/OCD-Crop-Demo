@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TapeData" format=3 uid="uid://bjd2l4008qdh4"]
+
+[ext_resource type="Texture2D" uid="uid://cg37l0xlr0r1y" path="res://assets/ui/ไม่มีชื่อ 11_ได้รับการกู้คืนแล้ว_20260620105846.png" id="1_8gft3"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_dkcdg"]
+[ext_resource type="Script" uid="uid://o8ye8w5685lf" path="res://scripts/tapedata.gd" id="2_8gft3"]
+[ext_resource type="Resource" uid="uid://dpts5iiidhjtm" path="res://data/CaedEnemy/stab.tres" id="3_yoa78"]
+[ext_resource type="Resource" uid="uid://ha7mxeyaeur7" path="res://data/CaedEnemy/beat.tres" id="4_p4mpf"]
+
+[resource]
+script = ExtResource("2_8gft3")
+icon = ExtResource("1_8gft3")
+loot_table = Array[ExtResource("1_dkcdg")]([ExtResource("3_yoa78"), ExtResource("4_p4mpf")])
+metadata/_custom_type_script = "uid://o8ye8w5685lf"

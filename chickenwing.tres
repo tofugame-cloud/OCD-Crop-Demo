@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://b8r2ac4s36f2n"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_yqbof"]
+[ext_resource type="Script" uid="uid://dvo3oa0sn8hyn" path="res://data/WeaponData/WeaponData.gd" id="2_djbf5"]
+
+[resource]
+script = ExtResource("2_djbf5")
+weapon_name = "chickenwing"
+metadata/_custom_type_script = "uid://dvo3oa0sn8hyn"

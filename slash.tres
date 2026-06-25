@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cjsljnou78ljb"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_fe64i"]
+[ext_resource type="Texture2D" uid="uid://b0x3q1nf6vtip" path="res://assets/cards/ไม่มีชื่อ 11_20260330021425.png" id="1_vvoon"]
+
+[resource]
+script = ExtResource("1_fe64i")
+card_image = ExtResource("1_vvoon")
+description = "Coin 2
+BasePower 4
+CoinPower 3
+Type Slash"
+base_power = 4
+coin_power = 3
+manual_coin_count = 2
+heal_amount = 0
+sp_gain = 0
+draw_amount = 0
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

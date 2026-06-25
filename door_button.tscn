@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://wbxcxkc6yw74"]
+
+[ext_resource type="Script" uid="uid://dkxd60nyui0ns" path="res://scenes/ui/Map_system/door_button.gd" id="1_21jv7"]
+[ext_resource type="Texture2D" uid="uid://bmo80rvwov7mn" path="res://assets/ui/ไม่มีชื่อ 21_20260502161515.png" id="2_afswu"]
+
+[node name="door_button" type="TextureButton" unique_id=768858834]
+custom_minimum_size = Vector2(150, 200)
+mouse_force_pass_scroll_events = false
+ignore_texture_size = true
+script = ExtResource("1_21jv7")
+
+[node name="icon" type="TextureRect" parent="." unique_id=1432528509]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_afswu")
+stretch_mode = 5
+
+[node name="DebugOverlay" type="ColorRect" parent="." unique_id=162678572]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RoomTypeLabel" type="Label" parent="." unique_id=13702963]
+visible = false
+layout_mode = 0
+offset_left = 48.0
+offset_top = -68.0
+offset_right = 149.0
+offset_bottom = -21.0
+
+[node name="SinNameLabel" type="Label" parent="." unique_id=1323567268]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SinBuffLabel" type="Label" parent="." unique_id=1033996542]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

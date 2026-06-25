@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TapeData" format=3 uid="uid://d0kj52mwi63y7"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_6rq8c"]
+[ext_resource type="Texture2D" uid="uid://b4jlau7e4w1i4" path="res://assets/ui/ไม่มีชื่อ 11_ได้รับการกู้คืนแล้ว_20260620105756.png" id="1_p3nwn"]
+[ext_resource type="Script" uid="uid://o8ye8w5685lf" path="res://scripts/tapedata.gd" id="2_p3nwn"]
+
+[resource]
+script = ExtResource("2_p3nwn")
+tape_name = "level_1_key"
+icon = ExtResource("1_p3nwn")
+metadata/_custom_type_script = "uid://o8ye8w5685lf"

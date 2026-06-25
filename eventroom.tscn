@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dvrbppob2m2y3"]
+
+[ext_resource type="Texture2D" uid="uid://dir2kxeoo3xon" path="res://assets/ui/ไม่มีชื่อ 21_20260502161519.png" id="1_quogl"]
+[ext_resource type="Script" uid="uid://ck2pyffc3mebb" path="res://scenes/ui/Map_system/eventroom.gd" id="2_rxliv"]
+
+[node name="eventroom" type="TextureRect" unique_id=915744109]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_quogl")
+script = ExtResource("2_rxliv")
+
+[node name="Button" type="Button" parent="." unique_id=791286487]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 274.0
+offset_right = 753.0
+offset_bottom = 409.0
+text = "กดๆๆ"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

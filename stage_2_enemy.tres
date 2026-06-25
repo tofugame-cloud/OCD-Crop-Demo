@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="StageData" format=3 uid="uid://bmv6x2ovbfojg"]
+
+[ext_resource type="Script" uid="uid://bmeiocaem7grg" path="res://scripts/StageData.gd" id="1_ect5o"]
+[ext_resource type="Resource" uid="uid://h71o7wt06om0" path="res://data/RoomResource/monster_room_1.tres" id="2_vbr6l"]
+
+[resource]
+script = ExtResource("1_ect5o")
+stage_id = "stage_2"
+stage_name = "-"
+position = Vector2(600, 400)
+required_keys = Array[String](["level_1_key"])
+room_resource = ExtResource("2_vbr6l")
+metadata/_custom_type_script = "uid://bmeiocaem7grg"

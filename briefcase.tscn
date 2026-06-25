@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://dlgkupkrnc8h6"]
+
+[ext_resource type="Script" uid="uid://b8n5hsg3eiqea" path="res://scenes/ui/briefcase.gd" id="1_1w0ql"]
+
+[node name="Briefcase" type="CanvasLayer" unique_id=292674750]
+script = ExtResource("1_1w0ql")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=492167126]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MainPanel" type="Panel" parent="." unique_id=1362733607]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainPanel" unique_id=301858591]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TitleLabel" type="Label" parent="MainPanel/VBoxContainer" unique_id=111480643]
+layout_mode = 2
+
+[node name="Separator" type="HSeparator" parent="MainPanel/VBoxContainer" unique_id=215270090]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="MainPanel/VBoxContainer" unique_id=1332251119]
+layout_mode = 2
+current_tab = 0
+
+[node name="KeyTapeTab" type="ScrollContainer" parent="MainPanel/VBoxContainer/TabContainer" unique_id=1885979226]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="KeyTapeGrid" type="GridContainer" parent="MainPanel/VBoxContainer/TabContainer/KeyTapeTab" unique_id=1369900341]
+layout_mode = 2
+
+[node name="LootTapeTab" type="ScrollContainer" parent="MainPanel/VBoxContainer/TabContainer" unique_id=314759565]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="LootTapeGrid" type="GridContainer" parent="MainPanel/VBoxContainer/TabContainer/LootTapeTab" unique_id=631834586]
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="MainPanel/VBoxContainer" unique_id=718638239]
+layout_mode = 2
+text = "X"

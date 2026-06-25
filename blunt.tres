@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dew7cg1xomlk1"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_4jirl"]
+[ext_resource type="Texture2D" uid="uid://ccvivwguervp0" path="res://assets/cards/ไม่มีชื่อ 11_20260326195130.png" id="1_bkb40"]
+
+[resource]
+script = ExtResource("1_4jirl")
+card_image = ExtResource("1_bkb40")
+animation_name = "blunt"
+description = "Coin 2
+BasePower 4
+CoinPower 3
+Type Blunt"
+base_power = 4
+coin_power = 3
+manual_coin_count = 2
+dmg_type = "Blunt"
+heal_amount = 0
+sp_gain = 0
+draw_amount = 0
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

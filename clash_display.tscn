@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://ccavrygruw8tp"]
+
+[ext_resource type="Script" uid="uid://ijaet6cviwu6" path="res://scenes/ui/clash_display.gd" id="1_wwcft"]
+[ext_resource type="PackedScene" uid="uid://d3wreapj8aokn" path="res://scenes/ui/floating_number.tscn" id="2_6nh81"]
+[ext_resource type="Texture2D" uid="uid://cwqruxf37bblw" path="res://assets/ui/ไม่มีชื่อ 13_20260606142816.png" id="2_kro31"]
+[ext_resource type="Texture2D" uid="uid://c56mawi7yiyuq" path="res://assets/ui/ไม่มีชื่อ 13_20260606142832.png" id="3_6nh81"]
+[ext_resource type="Texture2D" uid="uid://db66xhn170j6o" path="res://assets/ui/ไม่มีชื่อ 13_20260606142852.png" id="4_j4eo7"]
+[ext_resource type="Texture2D" uid="uid://cu8mkeubxixnn" path="res://assets/ui/ไม่มีชื่อ 13_20260606142907.png" id="5_d2yyr"]
+[ext_resource type="Texture2D" uid="uid://ds4e7xahuaitc" path="res://assets/ui/ไม่มีชื่อ 13_20260606142927.png" id="6_a2n86"]
+[ext_resource type="Texture2D" uid="uid://iav2f482btxi" path="res://assets/ui/ไม่มีชื่อ 13_20260606142933.png" id="7_lejf0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sypng"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kro31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kro31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6nh81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6nh81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j4eo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j4eo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d2yyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d2yyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d2yyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a2n86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a2n86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lejf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_lejf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kro31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kro31")
+}],
+"loop": false,
+"name": &"TossCoin",
+"speed": 24.0
+}]
+
+[node name="ClashDisplay" type="Control" unique_id=2142071822]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wwcft")
+
+[node name="FloatingNumber" parent="." unique_id=1814876798 instance=ExtResource("2_6nh81")]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.6580001
+anchor_bottom = 0.57500005
+offset_right = -26.320068
+offset_bottom = 0.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=476778160]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_constants/separation = 80
+alignment = 1
+
+[node name="PlayerSide" type="Control" parent="HBoxContainer" unique_id=523883244]
+layout_mode = 2
+
+[node name="SkillInfoPanel" type="TextureRect" parent="HBoxContainer/PlayerSide" unique_id=374303388]
+visible = false
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 87.0
+
+[node name="SkillNameLabel" type="Label" parent="HBoxContainer/PlayerSide/SkillInfoPanel" unique_id=200278699]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SkillDescLabel" type="Label" parent="HBoxContainer/PlayerSide/SkillInfoPanel" unique_id=365283711]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="BasePowerFrame" type="TextureRect" parent="HBoxContainer/PlayerSide" unique_id=359932719]
+layout_mode = 0
+offset_right = 1240.0
+offset_bottom = 1754.0
+
+[node name="BaseNumber" type="Label" parent="HBoxContainer/PlayerSide/BasePowerFrame" unique_id=966714178]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(1.5, 1.5)
+
+[node name="CoinHandDisplay" type="AnimatedSprite2D" parent="HBoxContainer/PlayerSide" unique_id=2059899611]
+scale = Vector2(0.175, 0.175)
+sprite_frames = SubResource("SpriteFrames_sypng")
+animation = &"TossCoin"
+
+[node name="FloatingTextMarker" type="Marker2D" parent="HBoxContainer/PlayerSide/CoinHandDisplay" unique_id=251139504]
+
+[node name="CoinCountLabel" type="Label" parent="HBoxContainer/PlayerSide/CoinHandDisplay" unique_id=1819542651]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="EnemySide" type="Control" parent="HBoxContainer" unique_id=1655998442]
+layout_mode = 2
+
+[node name="SkillInfoPanel" type="TextureRect" parent="HBoxContainer/EnemySide" unique_id=978249819]
+visible = false
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 67.0
+
+[node name="SkillNameLabel" type="Label" parent="HBoxContainer/EnemySide/SkillInfoPanel" unique_id=838535659]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 28.0
+offset_right = 180.0
+offset_bottom = 51.0
+
+[node name="SkillDescLabel" type="Label" parent="HBoxContainer/EnemySide/SkillInfoPanel" unique_id=206395477]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 14.0
+offset_right = 139.0
+offset_bottom = 37.0
+
+[node name="BasePowerFrame" type="TextureRect" parent="HBoxContainer/EnemySide" unique_id=1277973000]
+layout_mode = 0
+offset_right = 1240.0
+offset_bottom = 1754.0
+
+[node name="BaseNumber" type="Label" parent="HBoxContainer/EnemySide/BasePowerFrame" unique_id=1312309404]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(1.5, 1.5)
+
+[node name="CoinHandDisplay" type="AnimatedSprite2D" parent="HBoxContainer/EnemySide" unique_id=1333786226]
+position = Vector2(100, 0)
+scale = Vector2(0.175, 0.175)
+sprite_frames = SubResource("SpriteFrames_sypng")
+animation = &"TossCoin"
+
+[node name="FloatingTextMarker" type="Marker2D" parent="HBoxContainer/EnemySide/CoinHandDisplay" unique_id=834403740]
+
+[node name="CoinCountLabel" type="Label" parent="HBoxContainer/EnemySide/CoinHandDisplay" unique_id=721082749]
+offset_right = 40.0
+offset_bottom = 23.0

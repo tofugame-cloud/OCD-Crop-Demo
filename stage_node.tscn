@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b70f65slqrqhk"]
+
+[ext_resource type="Texture2D" uid="uid://dw6g5viul133f" path="res://assets/ui/ไม่มีชื่อ 20_20260621123130.png" id="1_5x6ar"]
+[ext_resource type="Script" uid="uid://cnq7sbo43chy8" path="res://stage_node.gd" id="1_y64gg"]
+[ext_resource type="Texture2D" uid="uid://548ngj02ieln" path="res://assets/ui/ไม่มีชื่อ 20_20260621123136.png" id="2_h7edp"]
+[ext_resource type="Texture2D" uid="uid://b40am7wlgp0g" path="res://assets/ui/ไม่มีชื่อ 20_20260620192157.png" id="3_dwktt"]
+
+[node name="stage_node" type="TextureButton" unique_id=212044731]
+offset_right = 80.0
+offset_bottom = 80.0
+texture_normal = ExtResource("1_5x6ar")
+texture_pressed = ExtResource("2_h7edp")
+texture_disabled = ExtResource("3_dwktt")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_y64gg")
+
+[node name="RoomTypeLabel" type="Label" parent="." unique_id=1180937079]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

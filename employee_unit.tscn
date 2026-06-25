@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://dy0gp8pook3jj"]
+
+[ext_resource type="Script" uid="uid://lg77joe87dx4" path="res://scenes/units/employee_unit.gd" id="1_nd6i8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ynhf8"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nd6i8"]
+radius = 268.0
+height = 1616.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nd6i8"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_24qi7"]
+bg_color = Color(0.91351366, 0.45493084, 7.70092e-07, 1)
+
+[node name="EmployeeUnit" type="Area2D" unique_id=1252779839]
+script = ExtResource("1_nd6i8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=261986821]
+sprite_frames = SubResource("SpriteFrames_ynhf8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=860938463]
+position = Vector2(216, 58)
+shape = SubResource("CapsuleShape2D_nd6i8")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1070560041]
+
+[node name="SPLabel" type="Label" parent="Marker2D" unique_id=1735573135]
+z_index = 10
+offset_left = 616.0
+offset_top = 810.0
+offset_right = 656.0
+offset_bottom = 833.0
+scale = Vector2(8, 8)
+
+[node name="HPBar" type="ProgressBar" parent="Marker2D" unique_id=1622879926]
+custom_minimum_size = Vector2(100, 15)
+offset_left = -88.0
+offset_top = 800.0
+offset_right = 12.0
+offset_bottom = 827.0
+scale = Vector2(7, 7)
+theme_override_styles/background = SubResource("StyleBoxFlat_nd6i8")
+theme_override_styles/fill = SubResource("StyleBoxFlat_24qi7")
+
+[node name="SpeedLabel" type="Label" parent="Marker2D" unique_id=1627281704]
+z_index = 10
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TargetLine" type="Line2D" parent="." unique_id=1293351679]
+top_level = true
+z_index = 10
+width = 1.0

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://beo4cgdybx66m"]
+
+[ext_resource type="Texture2D" uid="uid://byl5x7aub4m2o" path="res://assets/cards/ไม่มีชื่อ 11_20260326195248.png" id="1_mfcxl"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_rw6on"]
+
+[resource]
+script = ExtResource("1_rw6on")
+card_image = ExtResource("1_mfcxl")
+animation_name = "pierce"
+description = "Coin 3
+BasePower 3
+CoinPower 3
+Type Pierce"
+base_power = 3
+coin_power = 3
+manual_coin_count = 3
+heal_amount = 0
+sp_gain = 0
+draw_amount = 0
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

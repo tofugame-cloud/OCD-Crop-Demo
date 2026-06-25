@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dqrdubrovymqg"]
+
+[node name="team_up" type="TextureRect" unique_id=69470909]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="." unique_id=1200226765]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0

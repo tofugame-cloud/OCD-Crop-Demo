@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="EmployeeData" format=3 uid="uid://brjc7kvrqegt4"]
+
+[ext_resource type="Texture2D" uid="uid://bm36xqnu0wuj7" path="res://assets/Sprite/ไม่มีชื่อ 12_20260326194818.png" id="1_2l0gx"]
+[ext_resource type="Script" uid="uid://ugdjf2rwaf42" path="res://scripts/AbnormalityPage.gd" id="1_dpb4p"]
+[ext_resource type="Texture2D" uid="uid://be5yef0qphwnl" path="res://assets/Sprite/ไม่มีชื่อ 11_20260321210215.png" id="2_dpb4p"]
+[ext_resource type="Texture2D" uid="uid://x3pij1upv3ut" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322033824.png" id="3_5xuun"]
+[ext_resource type="Texture2D" uid="uid://s58m3y24gmuf" path="res://assets/Sprite/ไม่มีชื่อ 11_20260321210340.png" id="4_bmuh4"]
+[ext_resource type="Texture2D" uid="uid://deuc4tm8mhwuc" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322020248.png" id="5_npf24"]
+[ext_resource type="Texture2D" uid="uid://dt4r0rhbg8h5i" path="res://assets/Sprite/ไม่มีชื่อ 11_20260321205945.png" id="6_ha1hb"]
+[ext_resource type="Texture2D" uid="uid://m32ikh31odh0" path="res://assets/Sprite/ไม่มีชื่อ 11_20260321210850.png" id="7_k08cq"]
+[ext_resource type="Texture2D" uid="uid://ccnljbxqr1o37" path="res://assets/Sprite/ไม่มีชื่อ 12_20260326194825.png" id="8_npddc"]
+[ext_resource type="Script" uid="uid://b734l1pkky0qc" path="res://scripts/EquipmentData.gd" id="9_mayhh"]
+[ext_resource type="Script" uid="uid://dtmo0ecds5yd" path="res://scripts/EmployeeData.gd" id="10_ahakv"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="11_tyyex"]
+[ext_resource type="Resource" uid="uid://cjsljnou78ljb" path="res://data/CardPlayer/slash.tres" id="12_2kasy"]
+[ext_resource type="Resource" uid="uid://cbw1dog8m8xxh" path="res://data/CardPlayer/draw.tres" id="13_mrn4y"]
+[ext_resource type="Resource" uid="uid://t71pki5llc8v" path="res://data/CardPlayer/heal.tres" id="14_jcuyd"]
+[ext_resource type="Resource" uid="uid://dew7cg1xomlk1" path="res://data/CardPlayer/blunt.tres" id="15_04oo1"]
+[ext_resource type="Resource" uid="uid://beo4cgdybx66m" path="res://data/CardPlayer/pierce.tres" id="16_45uyj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_woq24"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2l0gx")
+}],
+"loop": true,
+"name": &"blunt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_dpb4p")
+}],
+"loop": true,
+"name": &"clash1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_5xuun")
+}],
+"loop": true,
+"name": &"clash1.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_bmuh4")
+}],
+"loop": true,
+"name": &"clash2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_npf24")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ha1hb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_k08cq")
+}],
+"loop": true,
+"name": &"lose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_npddc")
+}],
+"loop": true,
+"name": &"pierce",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_27s0x"]
+
+[resource]
+script = ExtResource("10_ahakv")
+employee_name = "denny"
+employee_id = 2
+employee_topdown = SubResource("SpriteFrames_27s0x")
+employee_anim = SubResource("SpriteFrames_woq24")
+starting_deck = Array[ExtResource("11_tyyex")]([ExtResource("12_2kasy"), ExtResource("12_2kasy"), ExtResource("12_2kasy"), ExtResource("13_mrn4y"), ExtResource("14_jcuyd"), ExtResource("15_04oo1"), ExtResource("16_45uyj"), ExtResource("16_45uyj"), ExtResource("16_45uyj")])
+metadata/_custom_type_script = "uid://dtmo0ecds5yd"

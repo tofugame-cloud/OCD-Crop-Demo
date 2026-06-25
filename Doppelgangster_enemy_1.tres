@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://byc7nwxu7mnri"]
+
+[ext_resource type="Script" uid="uid://ugdjf2rwaf42" path="res://scripts/AbnormalityPage.gd" id="1_nvvtn"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_qmkma"]
+[ext_resource type="Texture2D" uid="uid://bvsfrygrj2q62" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322020717.png" id="2_fq405"]
+[ext_resource type="Resource" uid="uid://ha7mxeyaeur7" path="res://data/CaedEnemy/beat.tres" id="2_inh85"]
+[ext_resource type="Texture2D" uid="uid://dex3hkvt22m6x" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322020703.png" id="2_lsibp"]
+[ext_resource type="Script" uid="uid://hnj6ltwpei23" path="res://scripts/EnemyData.gd" id="2_rtktm"]
+[ext_resource type="Texture2D" uid="uid://dfglgojwujvsg" path="res://assets/Sprite/ไม่มีชื่อ 12_20260430150810.png" id="2_xxmgv"]
+[ext_resource type="Texture2D" uid="uid://4lu2pqkrvrv" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322033934.png" id="3_cxlqj"]
+[ext_resource type="Resource" uid="uid://dpts5iiidhjtm" path="res://data/CaedEnemy/stab.tres" id="3_nvvtn"]
+[ext_resource type="Texture2D" uid="uid://bcqexnmi1pams" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322020907.png" id="4_xxmgv"]
+[ext_resource type="Texture2D" uid="uid://deuc4tm8mhwuc" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322020248.png" id="5_qrcmn"]
+[ext_resource type="Texture2D" uid="uid://cmk01qnjcigsj" path="res://assets/Sprite/ไม่มีชื่อ 11_20260322020746.png" id="7_inh85"]
+[ext_resource type="Texture2D" uid="uid://bdcvtnmkb6l52" path="res://assets/Sprite/ไม่มีชื่อ 12_20260430150931.png" id="9_qrcmn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmkma"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xxmgv")
+}],
+"loop": true,
+"name": &"beat",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fq405")
+}],
+"loop": true,
+"name": &"clash1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_cxlqj")
+}],
+"loop": true,
+"name": &"clash1.5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_xxmgv")
+}],
+"loop": true,
+"name": &"clash2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_qrcmn")
+}],
+"loop": true,
+"name": &"die",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lsibp")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_inh85")
+}],
+"loop": true,
+"name": &"lose",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_qrcmn")
+}],
+"loop": true,
+"name": &"stab",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rtktm"]
+
+[resource]
+script = ExtResource("2_rtktm")
+enemy_topdown = SubResource("SpriteFrames_rtktm")
+enemy_anim = SubResource("SpriteFrames_qmkma")
+visual_scale = Vector2(0.1, 0.1)
+max_targets = 3
+enemy_action_pool = Array[ExtResource("1_qmkma")]([ExtResource("2_inh85"), ExtResource("3_nvvtn")])
+metadata/_custom_type_script = "uid://hnj6ltwpei23"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://dpts5iiidhjtm"]
+
+[ext_resource type="Texture2D" uid="uid://ceg48y8eapwkq" path="res://assets/cards/ไม่มีชื่อ 11_20260430151522.png" id="1_3voi4"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_bl4jb"]
+
+[resource]
+script = ExtResource("1_bl4jb")
+card_image = ExtResource("1_3voi4")
+animation_name = "stab"
+description = "Coin 3
+BasePower 3
+CoinPower 2
+Type pierce"
+base_power = 3
+manual_coin_count = 3
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

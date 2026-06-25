@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3 uid="uid://c682pceh3u2wj"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_8olpg"]
+[ext_resource type="Script" uid="uid://dvo3oa0sn8hyn" path="res://data/WeaponData/WeaponData.gd" id="2_8wvte"]
+[ext_resource type="Resource" uid="uid://cjsljnou78ljb" path="res://data/CardPlayer/slash.tres" id="2_66f1y"]
+[ext_resource type="Resource" uid="uid://beo4cgdybx66m" path="res://data/CardPlayer/pierce.tres" id="3_not0m"]
+[ext_resource type="Resource" uid="uid://dew7cg1xomlk1" path="res://data/CardPlayer/blunt.tres" id="4_g4ixp"]
+
+[resource]
+script = ExtResource("2_8wvte")
+weapon_name = "Fong"
+bonus_cards = Array[ExtResource("1_8olpg")]([ExtResource("2_66f1y"), ExtResource("3_not0m"), ExtResource("4_g4ixp")])
+attack_bonus = 5
+metadata/_custom_type_script = "uid://dvo3oa0sn8hyn"

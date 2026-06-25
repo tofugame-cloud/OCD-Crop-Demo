@@ -1,0 +1,36 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="OCD-Crop-DemoV2"
+run/main_scene="uid://dy0gp8pook3jj"
+config/features=PackedStringArray("4.6", "Mobile")
+
+[autoload]
+
+GameManager="*uid://2x3c58mk8gm0"
+BattleManager="*uid://7ipmm83cnnsw"
+MainHud="*uid://bi1hxqskqi0ix"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

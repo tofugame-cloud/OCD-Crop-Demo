@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="TapeData" format=3 uid="uid://gcbutnrtr6qq"]
+
+[ext_resource type="Texture2D" uid="uid://b4jlau7e4w1i4" path="res://assets/ui/ไม่มีชื่อ 11_ได้รับการกู้คืนแล้ว_20260620105756.png" id="1_vp66r"]
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="2_33wih"]
+[ext_resource type="Script" uid="uid://o8ye8w5685lf" path="res://scripts/tapedata.gd" id="3_owpf7"]
+
+[resource]
+script = ExtResource("3_owpf7")
+tape_name = "supervisor_key"
+icon = ExtResource("1_vp66r")
+tape_type = "KEY"
+target_room_id = "supervisor_key"
+metadata/_custom_type_script = "uid://o8ye8w5685lf"

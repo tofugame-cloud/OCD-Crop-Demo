@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://ccy6acduklxip"]
+
+[ext_resource type="Script" uid="uid://dxc4n728gij6" path="res://scenes/ui/clash_preview.gd" id="1_fa1o3"]
+
+[node name="ClashPreview" type="MarginContainer" unique_id=1411625284]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("1_fa1o3")
+
+[node name="Background" type="TextureRect" parent="." unique_id=521407369]
+layout_mode = 2
+
+[node name="MainLayout" type="HBoxContainer" parent="." unique_id=63790547]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerSide" type="Control" parent="MainLayout" unique_id=1617107667]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="PlayerCard" type="TextureRect" parent="MainLayout/PlayerSide" unique_id=296984400]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 1
+offset_left = 700.0
+offset_right = 800.0
+offset_bottom = 150.0
+scale = Vector2(1.5, 1.5)
+
+[node name="PlayerDesc" type="Label" parent="MainLayout/PlayerSide" unique_id=379808089]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 4.0
+offset_right = 551.0
+offset_bottom = 27.0
+scale = Vector2(1.5, 1.5)
+
+[node name="CenterInfo" type="Control" parent="MainLayout" unique_id=1257246453]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="MainLayout/CenterInfo" unique_id=1941774822]
+custom_minimum_size = Vector2(80, 20)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_right = 30.0
+offset_bottom = 23.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnemySide" type="Control" parent="MainLayout" unique_id=1293396124]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 2
+
+[node name="EnemyCard" type="TextureRect" parent="MainLayout/EnemySide" unique_id=1638868490]
+custom_minimum_size = Vector2(100, 150)
+layout_mode = 0
+offset_left = -700.0
+offset_right = -600.0
+offset_bottom = 150.0
+scale = Vector2(1.5, 1.5)
+
+[node name="EnemyDesc" type="Label" parent="MainLayout/EnemySide" unique_id=1045528065]
+layout_mode = 0
+offset_left = -550.0
+offset_top = 4.0
+offset_right = -549.0
+offset_bottom = 27.0
+scale = Vector2(1.5, 1.5)

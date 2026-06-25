@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c14oopx1pyd4f"]
+
+[ext_resource type="Script" uid="uid://dsjrd5c2y1na" path="res://scenes/units/enemy_unit.gd" id="1_q824x"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pbvnf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q824x"]
+radius = 225.0
+height = 764.0
+
+[node name="Enemy_Unit" type="Area2D" unique_id=349712022]
+script = ExtResource("1_q824x")
+metadata/_edit_vertical_guides_ = [-2497.0, -3012.0, -2242.0, -2322.0, -2334.0]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1807094730]
+sprite_frames = SubResource("SpriteFrames_pbvnf")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=537355769]
+
+[node name="SPLabel" type="Label" parent="Marker2D" unique_id=812834373]
+z_index = 10
+offset_left = 115.0
+offset_top = 808.0
+offset_right = 155.0
+offset_bottom = 831.0
+scale = Vector2(8, 8)
+
+[node name="HPBar" type="ProgressBar" parent="Marker2D" unique_id=1581492343]
+custom_minimum_size = Vector2(100, 0)
+offset_left = -600.0
+offset_top = 800.0
+offset_right = -500.0
+offset_bottom = 827.0
+scale = Vector2(7, 7)
+
+[node name="SpeedLabel" type="Label" parent="Marker2D" unique_id=1692482983]
+z_index = 10
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=203614136]
+position = Vector2(-245, 38)
+shape = SubResource("CapsuleShape2D_q824x")
+
+[node name="TargetLine" type="Line2D" parent="." unique_id=757153572]
+z_index = 10
+width = 1.0

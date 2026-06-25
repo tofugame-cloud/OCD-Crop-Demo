@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dwbq7pk26etqy"]
+
+[ext_resource type="Script" uid="uid://chw2oy45kgpwy" path="res://card_ui.gd" id="1_s55cg"]
+
+[node name="CardUi" type="Control" unique_id=1734850912]
+custom_minimum_size = Vector2(80, 110)
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_s55cg")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=376258305]
+custom_minimum_size = Vector2(80, 110)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="SkilIcon" type="TextureRect" parent="TextureButton" unique_id=1148990679]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Power_Label" type="Label" parent="TextureButton" unique_id=2084766105]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

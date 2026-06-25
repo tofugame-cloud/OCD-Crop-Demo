@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://85fhus6nldpg"]
+
+[ext_resource type="Script" uid="uid://c3jq877rdf820" path="res://scenes/main/main_battle.gd" id="1_dt8ek"]
+[ext_resource type="PackedScene" uid="uid://dy0gp8pook3jj" path="res://scenes/units/employee_unit.tscn" id="2_31ej4"]
+[ext_resource type="Script" uid="uid://dtmo0ecds5yd" path="res://scripts/EmployeeData.gd" id="3_5nqo3"]
+[ext_resource type="PackedScene" uid="uid://c14oopx1pyd4f" path="res://scenes/units/enemy_unit.tscn" id="3_cvr44"]
+[ext_resource type="PackedScene" uid="uid://dwbq7pk26etqy" path="res://scenes/ui/card_ui.tscn" id="4_get24"]
+[ext_resource type="PackedScene" uid="uid://ccy6acduklxip" path="res://scenes/ui/clash_preview.tscn" id="5_f1s0u"]
+[ext_resource type="Resource" uid="uid://c25dpkcahx634" path="res://data/Character/player/denny.tres" id="6_cvr44"]
+[ext_resource type="Resource" uid="uid://brjc7kvrqegt4" path="res://data/Character/player/denny2.tres" id="8_cvr44"]
+[ext_resource type="PackedScene" uid="uid://ccavrygruw8tp" path="res://scenes/ui/clash_display.tscn" id="9_f1s0u"]
+
+[node name="mainbattle" type="Node2D" unique_id=1272750599]
+script = ExtResource("1_dt8ek")
+employee_scene = ExtResource("2_31ej4")
+enemy_scene = ExtResource("3_cvr44")
+card_ui_scene = ExtResource("4_get24")
+clash_preview_scene = ExtResource("5_f1s0u")
+player_party = Array[ExtResource("3_5nqo3")]([ExtResource("6_cvr44"), ExtResource("8_cvr44")])
+metadata/_edit_vertical_guides_ = [-2521.0]
+
+[node name="StageManager" type="Node2D" parent="." unique_id=1160126552]
+
+[node name="BattleField" type="Node2D" parent="StageManager" unique_id=891923616]
+
+[node name="PlayerSpawn" type="Marker2D" parent="StageManager/BattleField" unique_id=2076123289]
+
+[node name="EnemySpawn" type="Marker2D" parent="StageManager/BattleField" unique_id=248580116]
+
+[node name="Background" type="TextureRect" parent="StageManager" unique_id=210750742]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnvironmentEffects" type="GPUParticles2D" parent="StageManager" unique_id=1414968933]
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=202035706]
+
+[node name="BattleUI" type="Control" parent="CanvasLayer" unique_id=394425235]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardHand" type="HBoxContainer" parent="CanvasLayer/BattleUI" unique_id=1288865863]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CardHand" type="HBoxContainer" parent="CanvasLayer" unique_id=1279088769]
+z_index = 10
+custom_minimum_size = Vector2(80, 110)
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="StartButton" type="Button" parent="CanvasLayer" unique_id=1678458370]
+offset_left = 1503.0
+offset_top = 766.0
+offset_right = 1573.0
+offset_bottom = 797.0
+scale = Vector2(1.5, 1.5)
+text = "\"START\""
+
+[node name="TurnLabel" type="Label" parent="CanvasLayer" unique_id=155553436]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="AutoButton" type="Button" parent="CanvasLayer" unique_id=1704638164]
+offset_left = 1505.0
+offset_top = 683.0
+offset_right = 1604.0
+offset_bottom = 735.0
+text = "winrate"
+
+[node name="ClashDisplay" parent="CanvasLayer" unique_id=2142071822 instance=ExtResource("9_f1s0u")]
+
+[node name="BattleCamera" type="Camera2D" parent="." unique_id=1415043939]
+position = Vector2(642, 358)
+
+[connection signal="pressed" from="CanvasLayer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/AutoButton" to="." method="_on_auto_button_pressed"]

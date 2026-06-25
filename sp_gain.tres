@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cxim43nvi68rj"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_b2bfw"]
+[ext_resource type="Texture2D" uid="uid://dxpq3hv6npuvb" path="res://assets/cards/ไม่มีชื่อ 11_20260327035831.png" id="1_vci44"]
+
+[resource]
+script = ExtResource("1_b2bfw")
+card_image = ExtResource("1_vci44")
+animation_name = "idle"
+card_type = "SP Gain"
+heal_amount = 0
+draw_amount = 0
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

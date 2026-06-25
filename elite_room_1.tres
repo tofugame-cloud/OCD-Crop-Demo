@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="RoomResource" format=3 uid="uid://b7nmjc5w284q7"]
+
+[ext_resource type="Script" uid="uid://hnj6ltwpei23" path="res://scripts/EnemyData.gd" id="1_rwuu5"]
+[ext_resource type="Resource" uid="uid://p0hfqsyd857t" path="res://data/Character/enemy/Doppelgangster_elite_1.tres" id="2_crr7v"]
+[ext_resource type="Script" uid="uid://dhci85mu7sax7" path="res://data/RoomResource/RoomResource.gd" id="2_w5id3"]
+
+[resource]
+script = ExtResource("2_w5id3")
+type = "Elite"
+enemy_pool = Array[ExtResource("1_rwuu5")]([ExtResource("2_crr7v")])
+max_enemies = 1
+metadata/_custom_type_script = "uid://dhci85mu7sax7"

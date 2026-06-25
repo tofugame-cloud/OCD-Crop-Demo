@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://csui1adpjkpnt"]
+
+[ext_resource type="Script" uid="uid://psmhds2v2dnn" path="res://scenes/ui/Map_systemV2/stage_select_map.gd" id="1_qpfcr"]
+[ext_resource type="PackedScene" uid="uid://b70f65slqrqhk" path="res://scenes/ui/Map_systemV2/stage_node.tscn" id="1_ybppe"]
+[ext_resource type="Script" uid="uid://bmeiocaem7grg" path="res://scripts/StageData.gd" id="2_qusul"]
+[ext_resource type="Resource" uid="uid://dxox4v1coh4l8" path="res://data/stages/stage_1_enemy.tres" id="3_tp5qc"]
+[ext_resource type="PackedScene" uid="uid://x6t72f3cq2il" path="res://scenes/ui/Map_systemV2/stage_key_pass.tscn" id="3_yrwfx"]
+[ext_resource type="Resource" uid="uid://bmv6x2ovbfojg" path="res://data/stages/stage_2_enemy.tres" id="4_dlngu"]
+
+[node name="StageSelectMap" type="Control" unique_id=780633088]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_qpfcr")
+stage_node_scene = ExtResource("1_ybppe")
+all_stages = Array[ExtResource("2_qusul")]([ExtResource("3_tp5qc"), ExtResource("4_dlngu")])
+
+[node name="Background" type="TextureRect" parent="." unique_id=1579267901]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" type="Control" parent="." unique_id=1450379304]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StagesContainer" type="Control" parent="ScrollContainer" unique_id=707884148]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Line2D" type="Line2D" parent="ScrollContainer/StagesContainer" unique_id=1829211214]
+
+[node name="stage_node" parent="ScrollContainer/StagesContainer" unique_id=212044731 instance=ExtResource("1_ybppe")]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+
+[node name="UI_Overlay" type="CanvasLayer" parent="." unique_id=1990186793]
+
+[node name="stage_key_pass" parent="." unique_id=1898136780 instance=ExtResource("3_yrwfx")]

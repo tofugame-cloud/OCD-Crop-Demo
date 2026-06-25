@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://cbw1dog8m8xxh"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_2nlo7"]
+[ext_resource type="Texture2D" uid="uid://ygyc5rrepfid" path="res://assets/cards/ไม่มีชื่อ 11_20260330095626.png" id="1_24v6p"]
+
+[resource]
+script = ExtResource("1_2nlo7")
+card_image = ExtResource("1_24v6p")
+animation_name = "idle"
+description = "Draw 1 Card"
+card_type = "Draw"
+heal_amount = 0
+sp_gain = 0
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

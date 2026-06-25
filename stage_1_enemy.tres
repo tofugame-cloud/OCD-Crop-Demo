@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StageData" format=3 uid="uid://dxox4v1coh4l8"]
+
+[ext_resource type="Script" uid="uid://bmeiocaem7grg" path="res://scripts/StageData.gd" id="1_dnwwk"]
+[ext_resource type="Resource" uid="uid://bmv6x2ovbfojg" path="res://data/stages/stage_2_enemy.tres" id="2_2b6vx"]
+[ext_resource type="Resource" uid="uid://h71o7wt06om0" path="res://data/RoomResource/monster_room_1.tres" id="2_s3gyv"]
+
+[resource]
+script = ExtResource("1_dnwwk")
+stage_id = "stage_1"
+stage_name = "-"
+position = Vector2(200, 400)
+required_keys = Array[String](["supervisor_key"])
+room_resource = ExtResource("2_s3gyv")
+next_stages = Array[ExtResource("1_dnwwk")]([ExtResource("2_2b6vx")])
+metadata/_custom_type_script = "uid://bmeiocaem7grg"

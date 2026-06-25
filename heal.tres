@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://t71pki5llc8v"]
+
+[ext_resource type="Script" uid="uid://duk0dopn5r1d1" path="res://data/card_data.gd" id="1_ri1w4"]
+[ext_resource type="Texture2D" uid="uid://binjq6xpsr2d8" path="res://assets/cards/ไม่มีชื่อ 11_20260327035827.png" id="1_rqwi4"]
+
+[resource]
+script = ExtResource("1_ri1w4")
+card_image = ExtResource("1_rqwi4")
+animation_name = "idle"
+description = "Heal Hp 15"
+card_type = "Heal"
+sp_gain = 0
+draw_amount = 0
+metadata/_custom_type_script = "uid://duk0dopn5r1d1"

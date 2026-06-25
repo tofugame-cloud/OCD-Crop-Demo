@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dif1vym423sgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhhjx"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_45crs"]
+
+[node name="OverworldEnemy" type="Area2D" unique_id=1605629740]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=170246725]
+shape = SubResource("RectangleShape2D_nhhjx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1684373604]
+sprite_frames = SubResource("SpriteFrames_45crs")

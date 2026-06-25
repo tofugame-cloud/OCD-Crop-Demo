@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bi1hxqskqi0ix"]
+
+[ext_resource type="Script" uid="uid://bqft1qko4pvvb" path="res://scenes/ui/main_hud.gd" id="1_ed1ny"]
+
+[node name="MainHUD" type="CanvasLayer" unique_id=1895619108]
+script = ExtResource("1_ed1ny")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=880881148]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LeftMenuContainer" type="Control" parent="." unique_id=1694277587]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MenuBackground" type="TextureRect" parent="LeftMenuContainer" unique_id=1637129956]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LeftMenuContainer" unique_id=1528815051]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MenuTitle" type="Label" parent="LeftMenuContainer/VBoxContainer" unique_id=35833879]
+layout_mode = 2
+
+[node name="Separator" type="HSeparator" parent="LeftMenuContainer/VBoxContainer" unique_id=665521249]
+layout_mode = 2
+
+[node name="BtnOffice" type="Button" parent="LeftMenuContainer/VBoxContainer" unique_id=632220876]
+layout_mode = 2
+
+[node name="BtnMission" type="Button" parent="LeftMenuContainer/VBoxContainer" unique_id=847939932]
+layout_mode = 2
+
+[node name="BtnBurnTape" type="Button" parent="LeftMenuContainer/VBoxContainer" unique_id=1175468335]
+layout_mode = 2
+
+[node name="BtnBriefcase" type="Button" parent="LeftMenuContainer/VBoxContainer" unique_id=1311817403]
+layout_mode = 2
